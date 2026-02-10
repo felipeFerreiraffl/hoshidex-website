@@ -1,7 +1,8 @@
 import express from "express";
+import { PORT } from "./constants/constants.js";
 
 const app = express();
 
-app.listen(8080, () => {
-  console.log("Rodando http://localhost:8080!");
+app.listen(PORT, () => {
+  console.log(`Server running in http://localhost:${PORT}`);
 });
